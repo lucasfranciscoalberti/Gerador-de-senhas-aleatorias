@@ -27,6 +27,11 @@
                 </h2>
             </div>
             <div class="pass-settings">
+                <div>
+                    <input type="range" name="rangeInput" min="8" max="20" onchange="updateTextInput(this.value);">
+                    <input class="range" type="text" id="textInput" value="10">
+                </div>
+                
                 <ul class="options">
                     <li class="option">
                         <input checked id="lowercase" type="checkbox">

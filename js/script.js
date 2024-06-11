@@ -2,6 +2,11 @@ const lowercaseChars = 'abcdefghijklmnopqrstuvwxyz'
 const uppercaseChars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 const numbersChars = '0123456789'
 const symbolsChars = '!-$^+%#@)(*&=?.!-$^+%#@)(*&=?.'
+const charsRange = document.getElementById('textInput')
+
+function updateTextInput(val) {
+    charsRange.value=val; 
+}
 
 function getRandomChars(chars){
     const index = Math.floor(Math.random() * chars.length)
@@ -29,7 +34,7 @@ function generatePassword(){
     }
 
     let password = ''
-    const length = 12
+    let length = charsRange.value
 
     while (password.length < length){
         let char = getRandomChars(characters)
@@ -39,3 +44,4 @@ function generatePassword(){
 
     passwordInput.value = password
 }
+
