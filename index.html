@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Gerador de Senhas</title>
+</head>
+
+
+
+<body>
+    <div class="container">
+        <h1 class="title">Gerador de Senhas Aleatórias</h1>
+        <div class="wrapper">
+            <div class="input-box">
+                <input id="password" type="text" disabled>
+                <div>
+                    <span class="copy" id="copy" onclick="copyPassword()">Copiar</span>
+                </div>
+            </div>
+            <div class="div-subtitle">
+                <h2 class="subtitle">
+                    Configurações da senha:
+                </h2>
+            </div>
+            <div class="pass-settings">
+                <ul class="options">
+                    <li class="option">
+                        <input checked id="lowercase" type="checkbox">
+                        <label class="options-title" for="lowercase">Letras minusculas (a-z)</label>
+                    </li>
+                    <li class="option">
+                        <input checked id="uppercase" type="checkbox">
+                        <label class="options-title" for="uppercase">Letras maiúsculas (A-Z)</label>
+                    </li>
+                    <li class="option">
+                        <input checked id="numbers" type="checkbox">
+                        <label class="options-title" for="numbers">Números (0-9)</label>
+                    </li>
+                    <li class="option">
+                        <input checked id="symbols" type="checkbox">
+                        <label class="options-title" for="symbols">Símbolos (!-$^+)</label>
+                    </li>
+                    <li class="option">
+                        <input checked id="exc-duplicate" type="checkbox">
+                        <label class="options-title"for="exc-duplicate">Excluir caracteres duplicados</label>
+                    </li>
+                </ul>
+            </div>
+            <div class="button">
+                <button class="generate-btn btn" id="generate" onclick="generatePassword()">
+                    <p class="title-button">GERAR SENHA</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+    <script src="/js/copy.js"></script>
+    <script src="/js/background.js"></script>
+
+</body>
+
+</html>
