@@ -7,7 +7,15 @@ body {
 
 .container{
     text-align: center;
-    margin-top: 5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #161616;
+    width: 22rem;
+    height: 37rem ;
+    box-shadow: 0px 5px 30px #cc14cc2f;
+    border-radius: 1rem;
 }
 
 .copy{
